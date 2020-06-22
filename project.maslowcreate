@@ -8,6 +8,66 @@
     "topLevel": true,
     "allAtoms": [
         {
+            "atomType": "Circle",
+            "name": "Circle",
+            "x": 0.22980849292256456,
+            "y": 0.2786885245901639,
+            "uniqueID": 951904,
+            "ioValues": [
+                {
+                    "name": "diameter",
+                    "ioValue": 5
+                }
+            ]
+        },
+        {
+            "atomType": "Translate",
+            "name": "Translate",
+            "x": 0.33222314737718567,
+            "y": 0.30491803278688523,
+            "uniqueID": 151142,
+            "ioValues": [
+                {
+                    "name": "geometry",
+                    "ioValue": ""
+                },
+                {
+                    "name": "xDist",
+                    "ioValue": 0
+                },
+                {
+                    "name": "yDist",
+                    "ioValue": 0
+                },
+                {
+                    "name": "zDist",
+                    "ioValue": 10
+                }
+            ]
+        },
+        {
+            "atomType": "Code",
+            "name": "Code",
+            "x": 0.2656119900083264,
+            "y": 0.4983606557377049,
+            "uniqueID": 245114,
+            "ioValues": [],
+            "code": "//You can learn more about all of the available methods at https://jsxcad.js.org/app/UserGuide.html \n\n\nfunction main(Input1, Input2){\n  return Sphere(10)        //return must be geometry;\n}\n\nreturn main(Input1, Input2)"
+        },
+        {
+            "atomType": "Circle",
+            "name": "Circle",
+            "x": 0.20566194837635302,
+            "y": 0.8065573770491804,
+            "uniqueID": 359386,
+            "ioValues": [
+                {
+                    "name": "diameter",
+                    "ioValue": 3
+                }
+            ]
+        },
+        {
             "atomType": "Output",
             "name": "Output",
             "x": 0.9833472106577851,
@@ -15,6 +75,10 @@
             "ioValues": []
         }
     ],
-    "allConnectors": [],
-    "fileTypeVersion": 1
+    "allConnectors": [
+        null
+    ],
+    "fileTypeVersion": 1,
+    "filetypeVersion": 1,
+    "circleSegmentSize": "1"
 }
