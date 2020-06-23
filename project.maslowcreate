@@ -8,13 +8,80 @@
     "topLevel": true,
     "allAtoms": [
         {
-            "atomType": "Code",
-            "name": "Code",
-            "x": 0.2456286427976686,
-            "y": 0.43934426229508194,
-            "uniqueID": 875133,
-            "ioValues": [],
-            "code": "//You can learn more about all of the available methods at https://jsxcad.js.org/app/UserGuide.html \n\n\nfunction main(Input1, Input2){\n  return hull(point([0, 0, 10]),\n     circle(10))      //return must be geometry;\n}\n\nreturn main(Input1, Input2)\n\n"
+            "atomType": "Circle",
+            "name": "Circle",
+            "x": 0.16491661519456455,
+            "y": 0.23934426229508196,
+            "uniqueID": 598433,
+            "ioValues": [
+                {
+                    "name": "diameter",
+                    "ioValue": 10
+                }
+            ]
+        },
+        {
+            "atomType": "Equation",
+            "name": "Equation",
+            "x": 0.2643607164916615,
+            "y": 0.2295081967213115,
+            "ioValues": [
+                {
+                    "name": "y",
+                    "ioValue": 1
+                }
+            ],
+            "currentEquation": "x + y"
+        },
+        {
+            "atomType": "Translate",
+            "name": "Translate",
+            "x": 0.3347745521927115,
+            "y": 0.28524590163934427,
+            "ioValues": [
+                {
+                    "name": "geometry",
+                    "ioValue": ""
+                },
+                {
+                    "name": "xDist",
+                    "ioValue": 0
+                },
+                {
+                    "name": "yDist",
+                    "ioValue": 0
+                },
+                {
+                    "name": "zDist",
+                    "ioValue": 0
+                }
+            ]
+        },
+        {
+            "atomType": "Circle",
+            "name": "Circle",
+            "x": 0.16800494132180357,
+            "y": 0.46557377049180326,
+            "uniqueID": 191040,
+            "ioValues": [
+                {
+                    "name": "diameter",
+                    "ioValue": 10
+                }
+            ]
+        },
+        {
+            "atomType": "Circle",
+            "name": "Circle",
+            "x": 0.15750463248919086,
+            "y": 0.7573770491803279,
+            "uniqueID": 495328,
+            "ioValues": [
+                {
+                    "name": "diameter",
+                    "ioValue": 10
+                }
+            ]
         },
         {
             "atomType": "Output",
@@ -24,7 +91,19 @@
             "ioValues": []
         }
     ],
-    "allConnectors": [],
+    "allConnectors": [
+        {
+            "ap1Name": "geometry",
+            "ap2Name": "x",
+            "ap2Primary": false,
+            "ap1ID": 598433
+        },
+        {
+            "ap1Name": "result",
+            "ap2Name": "geometry",
+            "ap2Primary": true
+        }
+    ],
     "fileTypeVersion": 1,
     "filetypeVersion": 1,
     "circleSegmentSize": "1"
